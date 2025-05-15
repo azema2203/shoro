@@ -1,4 +1,4 @@
-package auth;
+package com.shoro.menu.auth;
 
 public class User {
     private String username;

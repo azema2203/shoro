@@ -1,6 +1,6 @@
-package auth;
+package com.shoro.menu.auth;
 
-import com.shoro.database.DBConnection;
+import com.shoro.menu.db.DBConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

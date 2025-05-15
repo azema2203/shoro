@@ -1,12 +1,10 @@
-package com.shoro.menu;
+package com.shoro.menu.menu;
 
-import com.shoro.auth.User;
-import com.shoro.database.DBConnection;
-import com.shoro.database.ProductDAO;
-import com.shoro.utils.ConsoleUtils;
+import com.shoro.menu.auth.User;
+import com.shoro.menu.db.DBConnection;
+import com.shoro.menu.db.ProductDAO;
+import com.shoro.menu.utils.ConsoleUtils;
 
-import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.Scanner;
 
 public class ProviderMenu {

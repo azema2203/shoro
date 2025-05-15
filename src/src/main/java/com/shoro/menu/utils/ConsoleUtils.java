@@ -1,4 +1,4 @@
-package utils;
+package com.shoro.menu.utils;
 
 import java.util.Scanner;
 

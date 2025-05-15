@@ -1,10 +1,10 @@
-package com.shoro.menu;
+package com.shoro.menu.menu;
 
-import com.shoro.auth.User;
-import com.shoro.database.DBConnection;
-import com.shoro.database.DeliveryDAO;
-import com.shoro.database.OrderDAO;
-import com.shoro.utils.ConsoleUtils;
+import com.shoro.menu.auth.User;
+import com.shoro.menu.db.DBConnection;
+import com.shoro.menu.db.DeliveryDAO;
+import com.shoro.menu.db.OrderDAO;
+import com.shoro.menu.utils.ConsoleUtils;
 
 import java.sql.Connection;
 import java.sql.SQLException;
