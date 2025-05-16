@@ -11,6 +11,7 @@ public class ProductDAO {
         List<Product> products = new ArrayList<>();
         String sql = "SELECT * FROM products WHERE status = 'AVAILABLE'";
 
+        // Создаем новое соединение внутри метода
         try (Connection conn = DBConnection.getConnection();
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(sql)) {
@@ -19,7 +20,8 @@ public class ProductDAO {
                 products.add(mapProduct(rs));
             }
         } catch (SQLException e) {
-            System.out.println("Ошибка при получении товаров: " + e.getMessage());
+            System.err.println("Ошибка при получении товаров: " + e.getMessage());
+            e.printStackTrace();
         }
         return products;
     }

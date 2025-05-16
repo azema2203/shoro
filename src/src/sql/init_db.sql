@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS deliveries (
 
 -- Вставка тестовых пользователей
 INSERT INTO users (username, password, user_type) VALUES
-     ('saleman', 'pa$$w0rd123', 'SELLER'),
+     ('saleman', 'saleman123', 'SELLER'),
      ('delivery', 'delivery123', 'DELIVERY'),
      ('provider', 'provider123', 'PROVIDER');
 
