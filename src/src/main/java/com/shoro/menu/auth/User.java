@@ -1,21 +1,20 @@
 package com.shoro.menu.auth;
 
-public class User {
+import java.sql.SQLException;
+
+public abstract class User {
     private String username;
     private String password;
-    private UserType userType;
+    private String userType;
 
-    public enum UserType {
-        SELLER, DELIVERY, PROVIDER
-    }
-
-    public User(String username, String password, UserType userType) {
+    public User(String username, String password, String userType) {
         this.username = username;
         this.password = password;
         this.userType = userType;
     }
 
-    // Геттеры и сеттеры
+    public abstract void showMenu() throws SQLException;
+
     public String getUsername() {
         return username;
     }
@@ -24,7 +23,7 @@ public class User {
         return password;
     }
 
-    public UserType getUserType() {
+    public String getUserType() {
         return userType;
     }
 }

@@ -1,4 +1,4 @@
-package com.shoro.menu.db;
+package com.shoro.menu.auth;
 
 import java.sql.Date;
 
@@ -13,7 +13,7 @@ public class Product {
 
     // Конструктор
     public Product(int id, String name, double price, Date purchaseDate,
-                   Date deliveryDate, int quantity, String status) {
+                   Date deliveryDate, int quantity, int minQuantity, String status) {
         this.id = id;
         this.name = name;
         this.price = price;

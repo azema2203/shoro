@@ -8,42 +8,49 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class DBConnection {
-    private static Connection connection = null;
+    // Убрали статическое соединение - теперь каждый вызов getConnection() создает новое соединение
+    private static final Properties prop = loadProperties();
 
-    public static Connection getConnection() {
-        if (connection != null) {
-            return connection;
-        }
-
+    private static Properties loadProperties() {
+        Properties properties = new Properties();
         try (InputStream input = DBConnection.class.getClassLoader().getResourceAsStream("db.properties")) {
-            Properties prop = new Properties();
-            prop.load(input);
-
-            String driver = prop.getProperty("db.driver");
-            String url = prop.getProperty("db.url") +
-                    "?useSSL=false" +
-                    "&serverTimezone=UTC" +
-                    "&connectTimeout=5000";
-            String user = prop.getProperty("db.user");
-            String password = prop.getProperty("db.password");
-
-            Class.forName(driver);
-            connection = DriverManager.getConnection(url, user, password);
-            return connection;
-        } catch (IOException | ClassNotFoundException | SQLException e) {
-            throw new RuntimeException("Failed to connect to database", e);
+            if (input == null) {
+                throw new RuntimeException("Не найден файл db.properties");
+            }
+            properties.load(input);
+        } catch (IOException e) {
+            throw new RuntimeException("Ошибка загрузки db.properties", e);
         }
+        return properties;
     }
 
-    public static void closeConnection() {
-        if (connection != null) {
+    public static Connection getConnection() throws SQLException {
+        // Всегда возвращаем новое соединение
+        String url = prop.getProperty("db.url") +
+                "?useSSL=false" +
+                "&serverTimezone=UTC" +
+                "&connectTimeout=5000";
+
+        return DriverManager.getConnection(
+                url,
+                prop.getProperty("db.user"),
+                prop.getProperty("db.password")
+        );
+    }
+
+    // Метод для безопасного закрытия соединения
+    public static void closeConnection(Connection conn) {
+        if (conn != null) {
             try {
-                connection.close();
-                connection = null;
+                if (!conn.isClosed()) {
+                    conn.close();
+                }
             } catch (SQLException e) {
-                e.printStackTrace();
+                System.err.println("Ошибка при закрытии соединения: " + e.getMessage());
             }
         }
     }
 }
+
+
 

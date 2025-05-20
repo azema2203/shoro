@@ -48,7 +48,7 @@ INSERT INTO users (username, password, user_type) VALUES
 
 -- Вставка тестовых товаров
 INSERT INTO products (name, price, purchase_date, delivery_date, quantity, status) VALUES
-      ('Молоток', 15.99, '2023-01-10', '2023-01-15', 50, 'AVAILABLE'),
-      ('Гвозди', 5.50, '2023-01-12', '2023-01-17', 200, 'AVAILABLE'),
-      ('Дрель', 89.99, '2023-02-01', '2023-02-05', 15, 'AVAILABLE'),
-      ('Пила', 45.00, '2023-02-10', '2023-02-15', 20, 'AVAILABLE');
+      ('Бозо', 92, '2025-01-10', '2025-01-15', 50, 'AVAILABLE'),
+      ('Чалап', 95, '2025-01-12', '2025-01-17', 30, 'AVAILABLE'),
+      ('Максым', 89, '2025-02-01', '2025-02-05', 15, 'AVAILABLE'),
+      ('Аралаш', 91, '2025-02-10', '2025-02-15', 20, 'AVAILABLE');

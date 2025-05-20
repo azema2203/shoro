@@ -1,4 +1,4 @@
-package com.shoro.menu.db;
+package com.shoro.menu.auth;
 
 import java.sql.Date;
 import java.util.Objects;
