@@ -4,43 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ad5c40d-12c4-4c7f-9e41-a410fcdec79d" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/db/DatabaseSetup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/main/resources/sale.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/auth/Authentication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/auth/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/auth/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/db/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/db/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/db/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/auth/Delivery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/db/DeliveryDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/db/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/auth/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/db/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/dao/OrderDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/db/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/auth/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/db/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/dao/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/menu/DeliveryMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/menu/ProviderMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/menu/SellerMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/main/java/com/shoro/menu/utils/ConsoleUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/sql/init_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/sql/init_db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/auth/Authentication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/auth/User$UserType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/auth/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/auth/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/db/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/db/DBConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/db/Delivery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/db/DeliveryDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/db/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/db/OrderDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/db/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/db/ProductDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/menu/DeliveryMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/menu/ProviderMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/menu/SellerMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target/classes/com/shoro/menu/utils/ConsoleUtils.class" beforeDir="false" />
-    </list>
+    <list default="true" id="7ad5c40d-12c4-4c7f-9e41-a410fcdec79d" name="Changes" comment="." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +93,7 @@
       <workItem from="1747207341729" duration="7637000" />
       <workItem from="1747215680226" duration="3340000" />
       <workItem from="1747222248681" duration="2717000" />
-      <workItem from="1747226265443" duration="57279000" />
+      <workItem from="1747226265443" duration="57590000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -179,7 +143,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747390171997</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=".">
+      <option name="closed" value="true" />
+      <created>1747728699813</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747728699813</updated>
+    </task>
+    <task id="LOCAL-00008" summary=".">
+      <option name="closed" value="true" />
+      <created>1747728768966</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747728768966</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
